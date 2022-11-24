@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleregistration.css">
+    <title>Kitty Spa - Adopt a Kitty</title>
+    <meta name="description"
+        content="The best wellnes and beauty treatments by kitties. After a wonderful welness treatment adopt your favourite Kitty!">
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <img src="cat-logo.png" alt="cat logo" class="logo">
+            <a href="homepage.html">Home</a>
+            <a href="content.html">Services</a>
+            <a href="registration.html">Registration</a>
+            <a href="contact.html">Contact</a>
+
+
+        </nav>
+    </header>
+    <main>
+        <p class="bradcrumb" style="padding-top:80px">
+            <a class="breadcrumb" href="homepage.html">Home > </a>
+            <a href="registration.html">Registration</a>
+        </p>
+
+        <img class="heropicture" src="kittengroup2.jpg" alt="kittens in a group">
+        <h1>Book your Appointment with us</h1>
+        <p>We are more than happy to make your day purrrfect!</p>
+        <form action="confirmation.html" accept-charset="UTF-8">
+            <fieldset>
+                <legend>Please fill out the Form</legend>
+                <p> <label>
+                        Name
+                        <input type="text" name="name" required>
+                    </label></p>
+                <p><label>
+                        Email address
+                        <input type="email" name="email" required>
+                    </label></p>
+                <p><label>
+                        Phone number
+                        <input type="tel" name="phone">
+                    </label></p>
+                <p>
+                    <!-- <label for="services" id="services">Choose your desired service:</label> -->
+                    <label>Choose your desired service:</label>
+                    <select name="services">
+                        <option value="massage">Massage by human and cat</option>
+                        <option value="facial">Facial and cat kisses</option>
+                        <option value="nap">Nap with a cat</option>
+                        <option value="sound">Purrfect sound bath</option>
+                    </select>
+
+                </p>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Appointment request</legend>
+                <div class="two-cols">
+                    <label>
+                        Date
+                        <input type="date" name="Appointment request" required>
+                    </label>
+                    <div class="inline">
+                        <label>
+                            <input type="hidden" name="Morning desired" value="no">
+                            <input type="checkbox" name="Morning desired" value="yes">
+                            Morning
+                        </label>
+                        <label>
+                            <input type="hidden" name="Afternoon desired" value="no">
+                            <input type="checkbox" name="Afternoon desired" value="yes">
+                            Afternoon
+                        </label>
+                    </div>
+                </div>
+                <p>Confirmation requested by</p>
+                <div class="inline">
+                    <label>
+                        <input type="radio" name="Confirmation requested by" value="email" checked>
+                        Email
+                    </label>
+                    <label>
+                        <input type="radio" name="Confirmation requested by" value="phone">
+                        Phone call
+                    </label>
+                </div>
+            </fieldset>
+
+
+            <button type="submit">Submit request </button>
+
+
+        </form>
+
+    </main>
+    <footer>
+        <div class="flex-container">
+            <div>
+                <h5>About Us</h5>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="content.html">Services</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                </ul>
+            </div>
+            <div class="footercontainer">
+                <h5>Contact</h5>
+                Kittystreet 32 <br>
+                10407 Catcitys
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

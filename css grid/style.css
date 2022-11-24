@@ -1,0 +1,53 @@
+body {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "navbar navbar navbar navbar"
+        "sidebar heropic heropic heropic"
+        "sidebar main main main"
+        "sidebar main main main"
+        "footer footer footer footer"
+}
+
+nav {
+    grid-area: navbar;
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+}
+
+header {
+    grid-area: heropic;
+    /* display: flex; */
+    width: 100%;
+
+}
+
+header img {
+    width: 100%;
+}
+
+/* .rose img { 
+
+    width: 100%;
+    height: auto;
+} */
+
+.sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: yellow;
+}
+
+main {
+    grid-area: main;
+    background-color: beige;
+}
+
+footer {
+    grid-area: footer;
+    background-color: blueviolet;
+}
